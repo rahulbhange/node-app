@@ -1,0 +1,37 @@
+{
+  "name": "rahul-nodejs",
+  "version": "1.0.0",
+  "description": "This Project explains all Node JS examples",
+  "main": "server.js",
+  "publishConfig": {
+    "registry": "http://18.130.41.40:8081/repository/nodejs-repo/"
+  },
+  "scripts": {
+    "server": "http-server -c-1 -p 9999",
+    "start1": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sonar": "node sonar-project.js"
+  },
+  "dependencies": {
+    "cfenv": "^1.1.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sonarqube-scanner": "^2.7.0"
+  },
+  "engines": {
+    "node": "v10.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahulbhange/node-app"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Rahul Bhange",
+  "license": "MIT"
+}
